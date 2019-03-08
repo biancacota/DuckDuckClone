@@ -2,30 +2,65 @@
 <html lang="en">
 <head>
 	<title>DuckDuckGo - Privacy, simplified.</title>
-	<link rel="stylesheet" type="text/css" href="">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/styling.css">
 	<script type="text/javascript"></script>
 </head>
-	<header>
-		<a href="">Privacy, simplified.</a>
-		<img src="">
-		<a href="">Twitter icon</a>
-		<img src="">
-		hmburger menu
-	</header>
-	<main>
-		<section>
-			<img src="" name="logo">
-			<div>
-				<form>
-					<input type="" name="">
-					<input type="" name="">
-				</form>
-			</div>
-		</section>
-		
-
-	</main>
 <body>
-
+	<header>
+		<nav id="topnav">
+			<a class="links" href="#privacy">Privacy, simplified.</a>
+ 			<a class="links" href="default.asp"> <img src="https://img.icons8.com/	material-outlined/24/000000/expand-arrow.png"></a>
+ 			<a class="links" href="deafault.asp"> <img src="https://img.icons8.com/	metro/26/000000/twitter.png"></a>
+ 			<a class= "links"href="default.asp"> <img src="https://img.icons8.com/material-outlined/24/000000/expand-arrow.png"></a>
+ 			<a calss= "links" href="default.asp"> <img src= "https://img.icons8.com/metro/26/000000/menu.png"></a>
+ 		</nav>
+ 	</header>
+	<main>
+		<section id="logo-container">
+			<img id= "ducklogo" src="images/logo.png">
+			<h1 id="logo-name">DuckDuckGo</h1>
+			<section id="searchbar-container">
+				<input id="input-container"type="text" name="Search Bar">
+				<img src="">
+			</section>
+			<section>
+				<p>The search engine that doesn't track you.</p>
+				<a href="#">Help Spread DuckDuckGo!</a>
+			</section>
+		</section>
+		<section id="privacy-ad" class="content-ads">		
+			<h1>We don't store your <br>personal information. Ever.</h1>
+			<p>Our privacy policy is simple: we don't collect <br> or share any of your personal information.</p>
+			<button>Add DuckDuckGo to Chrome</button>
+			<img src="images/no-information-stored.svg">
+		</section>
+		<section id="history-ad" class="content-ads">
+			<h1>We don't follow you <br> around with ads.</h1>
+			<p>We don't store your search history. We therefore have nothing <br> to sell to advertisers that track you across the internet.</p>
+			<button>Add DuckDuckGo to Chrome</button>
+			<img src="images/no-ads.svg">
+		</section>	
+		<section id="tracking-ad" class="content-ads">
+			<h1>We don't follow you in or out <br> of private browsing mode.</h1>
+			<p>Other search engines track your searches even when you're <br> in private browsing mode. We don't track you - period.</p>
+			<button>Add DuckDuckGo to Chrome</button>
+			<img src="images/no-tracking.svg">
+		</section>	
+	</main>
+	<footer>
+		<section id="footer-container">
+			<nav id="topright-nav">
+				<a class="links" href="#privacy">Dismiss forever</a>
+				<a class="links" href="#privacy">Back to search</a>
+			</nav>
+			<section class="content-ads">
+				<h1>Switch to DuckDuckGo and <br> take back your privacy!</h1>
+			<p>No tracking, no ad targeting, just searching.</p>
+			<button>Add DuckDuckGo to Chrome</button>
+			<img src="images/switch-to-duckduckgo.svg">
+			</section>
+		</section>
+	</footer>
 </body>
 </html>
