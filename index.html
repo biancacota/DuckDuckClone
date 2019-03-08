@@ -4,29 +4,33 @@
 	<title>DuckDuckGo - Privacy, simplified.</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/styling.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 	<script type="text/javascript"></script>
 </head>
 <body>
 	<header>
 		<nav id="topnav">
-			<a class="links" href="#privacy">Privacy, simplified.</a>
- 			<a class="links" href="default.asp"> <img src="https://img.icons8.com/	material-outlined/24/000000/expand-arrow.png"></a>
- 			<a class="links" href="deafault.asp"> <img src="https://img.icons8.com/	metro/26/000000/twitter.png"></a>
- 			<a class= "links"href="default.asp"> <img src="https://img.icons8.com/material-outlined/24/000000/expand-arrow.png"></a>
- 			<a calss= "links" href="default.asp"> <img src= "https://img.icons8.com/metro/26/000000/menu.png"></a>
+			<a class="links" href="default.asp">Privacy, simplified.</a>
+ 			<a class="links" href="default.asp"> <i class="fas fa-angle-down"></i></a>
+ 			<a class="links" href="deafault.asp"> <i class="fab fa-twitter"></i></a>
+ 			<a class= "links"href="default.asp"> <i class="fas fa-angle-down"></i></a>
+ 			<a class= "links" id="hamburger" href="default.asp"> <i class="fas fa-bars"></i></a>
  		</nav>
  	</header>
 	<main>
 		<section id="logo-container">
-			<img id= "ducklogo" src="images/logo.png">
+			<a href="#"><img id= "ducklogo" src="images/logo.png"></a>
 			<h1 id="logo-name">DuckDuckGo</h1>
 			<section id="searchbar-container">
 				<input id="input-container"type="text" name="Search Bar">
-				<img src="">
+				<a href="#"><i class="fas fa-search"></i></a>
 			</section>
-			<section>
+			<section id="tagline">
 				<p>The search engine that doesn't track you.</p>
 				<a href="#">Help Spread DuckDuckGo!</a>
+			</section>
+			<section id="teaser">
+				<a href=""><img src="images/teaser.png"></a>
 			</section>
 		</section>
 		<section id="privacy-ad" class="content-ads">		

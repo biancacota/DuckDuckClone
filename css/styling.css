@@ -3,6 +3,8 @@ body{
 	background-color: #F7F7F7;
 }
 #topnav{
+	font-family: helvetica;
+	font-size: 14px;
 	display: flex;
 	justify-content: flex-end;
 	padding-top: 30px;
@@ -10,15 +12,26 @@ body{
 	padding-right: 10px;
 }
 .links {
-	color: #8D8D8D;
+	color: #ADADAD;
 	text-decoration: none;
+	padding: 5px;
 }
-.links img{
-	color: #8D8D8D;
+.links:hover{
+	color: #6D6D6D;
 }
+#hamburger:hover{
+	border: solid;
+	border-radius: .4;
+	background-color: #6D6D6D;
+	color: #FFF;
+}
+
 #logo-container{
 	text-align: center;
 	margin-top: 100px;
+	padding: 0;
+	margin: 0;
+	margin-top: 60px; 
 }
 #ducklogo {
 	width: 125px;
@@ -27,38 +40,108 @@ body{
 #logo-name{
 	color: #4C4C4C;
 	font-size: 35px;
+	font-family: helvetica;
+	font-weight: 100;
+	text-decoration: none;
 }
 #input-container{
+	overflow:hidden;
+	margin:0;
+	padding:0;
 	width: 500px;
-	height: 35px;
-	font-size: 16px;
-	padding: 0 10px;
-	outline-color: #D9D9D9;
+	height:40px;
+	display: inline;
+	border-radius: 1.4;
 }
+
+#tagline{
+	color: #ADADAD;
+	font-family: helvetica;
+	font-size: 16px;
+	margin-top: 25px;
+	margin-bottom: 60px;
+}
+
+#tagline p{
+	display: inline;
+}
+#tagline a{
+	text-decoration: none;
+	color: #549ED7;
+}
+#teaser img{
+	height: 70px;
+	opacity: .7;
+	margin-bottom: 40px;
+}
+
 .content-ads{
 	text-align: center;
 	color: #FFFFFF;
-	font-family: Arial;
+	font-family: helvetica;
 	font-size: 24px;
+	padding-top: 20px;
+	line-height: 1.4;
+}
+
+.content-ads p{
+	font-size: 18px;
+	line-height: 1.6;
 }
 
 #privacy-ad{
-	background-color: #58b792;
+	background-color: #58B792;
 }
 #privacy-ad button{
 	padding: 12px 16px;
     text-decoration: none;
-    font-weight: 600;
     line-height: 100%;
-    color: #fff;
-    background: #2C5B49;
+    color: #FFF;
+    background: #356E58;
+    font-size: 16px;
+    font-weight: 600;
     border: none;
+    border-radius: 4px;
+}
+#privacy-ad button:hover{
+	background-color: #2C5B49;
+	color: #FFF;
 }
 #history-ad{
 	background-color: #F5A339;
 }
+#history-ad button{
+	padding: 12px 16px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    color: #fff;
+    background: #936222;
+    border: none;
+    border-radius: 4px;
+}
+#history-ad button:hover{
+	background-color: #7A511C;
+	color: #FFF;
+}
 #tracking-ad{
 	background-color: #5F63BD;
+}
+#tracking-ad button{
+	padding: 12px 16px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    color: #fff;
+    background: #393B71;
+    border: none;
+    border-radius: 4px;
+}
+#tracking-ad button:hover{
+	background-color: #2F315E;
+	color: #FFF;
 }
 #footer-container{
 	background-color: #87cef5;
