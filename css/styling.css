@@ -21,7 +21,6 @@ body{
 }
 #hamburger:hover{
 	border: solid;
-	border-radius: .4;
 	background-color: #6D6D6D;
 	color: #FFF;
 }
@@ -43,6 +42,25 @@ body{
 	font-family: helvetica;
 	font-weight: 100;
 	text-decoration: none;
+	margin-top: 15px;
+}
+#searchbar-container{
+	position: relative;
+}
+#searchbar-container .fas{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	color: #ADADAD;
+	height: 20px;
+	bottom: 9px;
+	left: 450px;
+	border: none;
+
+}
+#searchbar-container .fas:hover{
+	background: ;
+	color: #FFF;
 }
 #input-container{
 	overflow:hidden;
@@ -50,8 +68,6 @@ body{
 	padding:0;
 	width: 500px;
 	height:40px;
-	display: inline;
-	border-radius: 1.4;
 }
 
 #tagline{
@@ -82,6 +98,7 @@ body{
 	font-size: 24px;
 	padding-top: 20px;
 	line-height: 1.4;
+	margin: 0;
 }
 
 .content-ads p{
@@ -107,6 +124,7 @@ body{
 	background-color: #2C5B49;
 	color: #FFF;
 }
+
 #history-ad{
 	background-color: #F5A339;
 }
@@ -143,7 +161,36 @@ body{
 	background-color: #2F315E;
 	color: #FFF;
 }
+/*footer*/
 #footer-container{
 	background-color: #87cef5;
+	margin: 0;
 }
-
+.footer-ad {
+	color: #365374;
+	text-align: center;
+	font-family: helvetica;
+	font-size: 36px;
+	padding-top: 20px;
+	line-height: 1.4;
+	margin: 0;
+}
+.footer-ad button{
+	padding: 12px 16px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    color: #fff;
+    background: #365374;
+    border: none;
+    border-radius: 4px;
+}
+.footer-ad p{
+	font-size: 18px;
+	line-height: 1.6;
+}
+.footer-ad button:hover{
+	background-color: #41658D;
+	color: #FFF;
+}
