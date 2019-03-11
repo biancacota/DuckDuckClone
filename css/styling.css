@@ -2,6 +2,7 @@ body{
 	margin:0;
 	background-color: #F7F7F7;
 }
+
 #topnav{
 	font-family: helvetica;
 	font-size: 14px;
@@ -19,10 +20,18 @@ body{
 .links:hover{
 	color: #6D6D6D;
 }
+
 #hamburger:hover{
 	border: solid;
 	background-color: #6D6D6D;
 	color: #FFF;
+}
+/*dropdown container*/
+#dropdown-container{
+	border-style: solid;
+	color: #ADADAD;
+	background: #FFF;
+	width: 450px;
 }
 
 #logo-container{
@@ -31,6 +40,7 @@ body{
 	padding: 0;
 	margin: 0;
 	margin-top: 60px; 
+	background-color: #F7F7F7;
 }
 #ducklogo {
 	width: 125px;
@@ -46,22 +56,11 @@ body{
 }
 #searchbar-container{
 	position: relative;
+	width: 500px;
+	height: 40px;
+	margin-left: 425px;
 }
-#searchbar-container .fas{
-	position: absolute;
-	left: 0px;
-	right: 0px;
-	color: #ADADAD;
-	height: 20px;
-	bottom: 9px;
-	left: 450px;
-	border: none;
 
-}
-#searchbar-container .fas:hover{
-	background: ;
-	color: #FFF;
-}
 #input-container{
 	overflow:hidden;
 	margin:0;
@@ -69,7 +68,17 @@ body{
 	width: 500px;
 	height:40px;
 }
-
+#searchbar-container .fas{
+	position: absolute;
+	right: 0px;
+	color: #ADADAD;
+	bottom: 9px;
+	left: 450px;
+}
+#searchbar-container .fas:hover{
+	background: #66AD57;
+	color: #FFF;
+}
 #tagline{
 	color: #ADADAD;
 	font-family: helvetica;
@@ -111,61 +120,91 @@ body{
 }
 #privacy-ad button{
 	padding: 12px 16px;
-    text-decoration: none;
-    line-height: 100%;
     color: #FFF;
     background: #356E58;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: bold;
     border: none;
     border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    margin-left: 525px;
 }
 #privacy-ad button:hover{
 	background-color: #2C5B49;
-	color: #FFF;
 }
+#privacy-ad img{
+	height: 250px;
+	margin-top: 50px;
+}
+
 
 #history-ad{
 	background-color: #F5A339;
 }
 #history-ad button{
 	padding: 12px 16px;
-    text-decoration: none;
-    font-weight: 600;
+	color: #FFF;
+    font-weight: bold;
     font-size: 16px;
-    line-height: 100%;
-    color: #fff;
     background: #936222;
     border: none;
     border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    margin-left: 525px;
 }
 #history-ad button:hover{
 	background-color: #7A511C;
-	color: #FFF;
 }
+#history-ad img{
+	height: 250px;
+	margin-top: 50px;
+}
+
+
 #tracking-ad{
 	background-color: #5F63BD;
 }
 #tracking-ad button{
 	padding: 12px 16px;
-    text-decoration: none;
-    font-weight: 600;
+    font-weight: bold;
     font-size: 16px;
-    line-height: 100%;
     color: #fff;
     background: #393B71;
     border: none;
-    border-radius: 4px;
+    border-radius: 4px; 
+    cursor: pointer;
+    display: flex;
+    margin-left: 525px;
 }
 #tracking-ad button:hover{
 	background-color: #2F315E;
-	color: #FFF;
+}
+#tracking-ad img{
+	height: 250px;
+	margin-top: 50px;
 }
 /*footer*/
 #footer-container{
 	background-color: #87cef5;
 	margin: 0;
 }
+#footer-nav {
+	font-family: helvetica;
+	font-size: 14px;
+	display: flex;
+	justify-content: flex-end;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-right: 10px;
+}
+.f-links{
+	color: #365374;
+	text-decoration: none;
+	padding: 5px;
+}
+
 .footer-ad {
 	color: #365374;
 	text-align: center;
@@ -175,22 +214,27 @@ body{
 	line-height: 1.4;
 	margin: 0;
 }
-.footer-ad button{
-	padding: 12px 16px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 100%;
-    color: #fff;
-    background: #365374;
-    border: none;
-    border-radius: 4px;
-}
 .footer-ad p{
 	font-size: 18px;
 	line-height: 1.6;
 }
+.footer-ad button{
+	padding: 12px 16px;
+    font-weight: bold;
+    font-size: 16px;;
+    color: #fff;
+    background: #365374;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    margin-left: 525px;
+}
 .footer-ad button:hover{
 	background-color: #41658D;
 	color: #FFF;
+}
+.footer-ad img{
+	height: 250px;
+	margin-top: 50px;
 }
