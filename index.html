@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>DuckDuckGo - Privacy, simplified.</title>
 	<meta charset="utf-8">
+	<title>DuckDuckGo - Privacy, simplified.</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/styling.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 	<script type="text/javascript"></script>
@@ -10,10 +12,13 @@
 <body>
 	<header>
 		<nav id="topnav">
-			<a class="links" href="default.asp">Privacy, simplified.</a>
- 			<a class="links" href="default.asp"> <i class="fas fa-angle-down"></i></a>
- 			<div id="dropdown-container">
- 				<section class="dropdown-links">
+			<div id="privacy-simplified">
+				<a class="privacy" href="default.asp">Privacy, simplified.</a>
+ 				<a class="privacy" href="default.asp"> <i class="fas fa-angle-down"></i></a>
+			</div>
+			
+ 			<!-- <div id="dropdown-container"> -->
+ 				<!-- <section class="dropdown-links">
  					<a href="#"><img src="images/woman-icon.svg"></a>
  					<h1>Get Our App & Extension</h1>
  					<p>Protect your data on every device.</p>
@@ -32,15 +37,30 @@
  					<a href="#"><img src="images/spread-word.svg"></a>
 					<h1>Spread DuckDuckGo</h1>
  					<p>Help your friends and family join the Duck Side!.</p>
- 				</section>
+ 				</section> -->
+ 			<!-- </div> -->
+ 			<div id="twitter">
+ 				<a class="links" href="https://twitter.com/duckduckgo"> <i class="fab fa-twitter"></i></a>
+ 				<a class= "links"href="default.asp"> <i class="fas fa-angle-down"></i></a>
+<!--  				<div id="twitter-container">
+ 					<span>
+ 						<a class="box-icons" href="#"><img src="images/twitter-blue.png">Twitter</a>
+ 					</span>
+ 					<span>
+ 						<a class="box-icons" href="#"><img src="images/reddit-icon.png">Reddit</a>
+ 					</span>
+ 					<span>	
+ 						<a class="box-icons" href="#"><img src="images/blog-icon.png">Blog</a>
+ 					</span>
+ 				</div> -->
  			</div>
- 			<a class="links" href="deafault.asp"> <i class="fab fa-twitter"></i></a>
- 			<a class= "links"href="default.asp"> <i class="fas fa-angle-down"></i></a>
- 			<a class= "links" id="hamburger" href="default.asp"> <i class="fas fa-bars"></i></a>
+ 			<div id="hamburger">
+ 				<a href="default.asp"> <i class="fas fa-bars"></i></a>
+ 			</div>
  		</nav>
  	</header>
 	<main>
-		<section id="logo-container">
+		<div id="wrapper">
 			<a href="#"><img id= "ducklogo" src="images/logo.png"></a>
 			<h1 id="logo-name">DuckDuckGo</h1>
 			<section id="searchbar-container">
@@ -51,10 +71,11 @@
 				<p>The search engine that doesn't track you.</p>
 				<a href="#">Help Spread DuckDuckGo!</a>
 			</section>
+		</div>
 			<section id="teaser">
 				<a href=""><img src="images/teaser.png"></a>
+				<i class="fas fa-arrow-circle-down"></i>
 			</section>
-		</section>
 
 		<section id="privacy-ad" class="content-ads">		
 			<h1>We don't store your <br>personal information. Ever.</h1>
