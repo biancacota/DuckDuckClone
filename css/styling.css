@@ -61,15 +61,6 @@ img{
 	color: #FFFFFF;
 }
 
-/*dropdown container #1 begins*/
-#dropdown-container{
-	border-style: solid;
-	color: #ADADAD;
-	background: #FFF;
-	width: 450px;
-}
-/*dropdown container#1 ends*/
-
 #twitter-container{
 	border-style: none;
 	text-align: center;
@@ -184,7 +175,6 @@ img{
 	padding-top: 20px;
 	line-height: 1.4;
 }
-
 .content-ads p{
 	font-size: 18px;
 	line-height: 1.6;
@@ -368,7 +358,7 @@ img{
   overflow: hidden;
 }
 
-/* Dropdown button */
+
 .dropdown .dropbtn {
   font-size: 16px; 
   border: none;
@@ -376,11 +366,10 @@ img{
   color: white;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
+  font-family: inherit; 
+  margin: 0;
 }
 
-/* Dropdown content (hidden by default) */
 .dropdown-content {
 
   position: absolute;
@@ -390,7 +379,7 @@ img{
   z-index: 1;
 }
 
-/* Links inside the dropdown */
+
 .dropdown-content a {
   float: none;
   color: #ADADAD;
@@ -404,7 +393,6 @@ img{
   text-decoration: underline;
 }
 
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
