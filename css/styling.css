@@ -2,6 +2,7 @@ body{
 	margin:0;
 	padding: 0;
 	background-color: #F7F7F7;
+	height: 250px;
 }
 
 img{
@@ -57,7 +58,7 @@ img{
 #hamburger a:hover{
 	color: #FFFFFF;
 }
-
+/*twitter dropdown box begins*/
 #twitter-container{
 	border-style: none;
 	text-align: center;
@@ -78,6 +79,7 @@ img{
 #twitter-container a:hover{
 	text-decoration: underline;
 }
+/*twitter dropdown box ends*/
 
 #wrapper{
 	text-align: center;
@@ -163,6 +165,7 @@ img{
 #teaser img:hover{
 	opacity: 9;
 }
+
 .content-ads{
 	margin: auto;
 	text-align: center;
