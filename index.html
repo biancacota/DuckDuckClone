@@ -3,59 +3,34 @@
 <head>
 	<meta charset="utf-8">
 	<title>DuckDuckGo - Privacy, simplified.</title>
-
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/styling.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script type="text/javascript"></script>
 </head>
+
 <body>
 	<header>
 		<nav id="topnav">
 			<div id="privacy-simplified">
-				<a class="privacy" href="default.asp">Privacy, simplified.</a>
- 				<a class="privacy" href="default.asp"> <i class="fas fa-angle-down"></i></a>
+				<div class="hide-mobile">
+					<a class="privacy" href="#">Privacy, simplified.</a>
+ 					<a class="privacy" href="#"> <i class="fas fa-angle-down"></i></a>
+				</div>
+				
 			</div>
-			
- 			<!-- <div id="dropdown-container"> -->
- 				<!-- <section class="dropdown-links">
- 					<a href="#"><img src="images/woman-icon.svg"></a>
- 					<h1>Get Our App & Extension</h1>
- 					<p>Protect your data on every device.</p>
- 				</section>
- 				<section>
- 					<a href="#"><img src="images/woman-icons.svg"></a>
- 					<h1>Subscribe to our Privacy Crash Course</h1>
- 					<p>Learn about online privacy right in your inbox.</p>
- 				</section>
- 				<section>
- 					<a href="#"><img src="images/privacy-simplified.svg"></a>
- 					<h1>Protect Your Devices</h1>
- 					<p>Check out our privacy device guides.</p>
- 				</section>
- 				<section>
- 					<a href="#"><img src="images/spread-word.svg"></a>
-					<h1>Spread DuckDuckGo</h1>
- 					<p>Help your friends and family join the Duck Side!.</p>
- 				</section> -->
- 			<!-- </div> -->
  			<div id="twitter">
  				<a class="links" href="https://twitter.com/duckduckgo"> <i class="fab fa-twitter"></i></a>
- 				<a class= "links"href="default.asp"> <i class="fas fa-angle-down"></i></a>
-<!--  				<div id="twitter-container">
- 					<span>
- 						<a class="box-icons" href="#"><img src="images/twitter-blue.png">Twitter</a>
- 					</span>
- 					<span>
- 						<a class="box-icons" href="#"><img src="images/reddit-icon.png">Reddit</a>
- 					</span>
- 					<span>	
- 						<a class="box-icons" href="#"><img src="images/blog-icon.png">Blog</a>
- 					</span>
- 				</div> -->
+ 				<a class= "links"  class="dropbtn" href="#"> <i class="fas fa-angle-down"></i></a>
+ 				<div class="dropdown-content">
+ 					<a href="#"><img src="images/twitter-blue.png">Twitter</a>
+ 					<a href="#"><img src="images/reddit-icon.png">Reddit</a>
+ 					<a  href="#"><img src="images/blog-icon.png">Blog</a>
+ 				</div>
  			</div>
  			<div id="hamburger">
- 				<a href="default.asp"> <i class="fas fa-bars"></i></a>
+ 				<a href="#"> <i class="fas fa-bars"></i></a>
  			</div>
  		</nav>
  	</header>
@@ -63,13 +38,13 @@
 		<div id="wrapper">
 			<a href="#"><img id= "ducklogo" src="images/logo.png"></a>
 			<h1 id="logo-name">DuckDuckGo</h1>
-			<section id="searchbar-container">
-				<input id="input-container"type="text" name="Search Bar">
-				<i class="fas fa-search"></i>
-			</section>
+			<form class="searchbar" action="/action_page.php" style="margin:auto;max-width:500px">
+  				<input type="text" name="search2">
+  				<button type="submit"><i class="fa fa-search"></i></button>
+			</form>
 			<section id="tagline">
 				<p>The search engine that doesn't track you.</p>
-				<a href="#">Help Spread DuckDuckGo!</a>
+				<a class="hide" href="#">Help Spread DuckDuckGo!</a>
 			</section>
 		</div>
 			<section id="teaser">

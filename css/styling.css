@@ -7,6 +7,12 @@ html, body{
 	height: 100%;
 }
 
+img{
+	max-width: 100%;
+	height: auto;
+	margin: 0 0 10px 0;
+}
+
 #topnav{
 	font-family: helvetica;
 	font-size: 13px;
@@ -27,7 +33,7 @@ html, body{
 	color: #6D6D6D;
 }
 #twitter{
-	padding-right: 40px;
+	padding-right: 50px;
 	padding-top: 10px;
 }
 .links {
@@ -41,19 +47,20 @@ html, body{
 	margin-right: inherit;
 	padding: 10px;
 	position: absolute;
-	color: #ADADAD;
 }
 #hamburger a{
-    position: absolute;
     color: #ADADAD;
 }
-
-#hamburger .fas:hover{
-	border-style: solid;
-	background-color: #6D6D6D;
-	color: #FFF;
-	border-radius: 4;
+#hamburger:hover{
+	border-style: none;
+	background: #6D6D6D;
+	color: #FFFFFF;
+	border-radius: 4px;
 }
+#hamburger a:hover{
+	color: #FFFFFF;
+}
+
 /*dropdown container #1 begins*/
 #dropdown-container{
 	border-style: solid;
@@ -83,6 +90,7 @@ html, body{
 #twitter-container a:hover{
 	text-decoration: underline;
 }
+
 #wrapper{
 	text-align: center;
 	margin-top: 100px;
@@ -101,31 +109,42 @@ html, body{
 	text-decoration: none;
 	margin-top: 15px;
 }
-#searchbar-container{
-	position: relative;
-	height: 40px;
+
+* {
+  box-sizing: border-box;
+}
+.searchbar input[type=text]{
+	padding: 10px;
+  	font-size: 17px;
+  	border-style: solid;
+  	color: lightgray;
+ 	float: left;
+  	width: 80%;
+  	background: #FFF;
+  	border-right: none;
+}
+.searchbar button {
+ 	float: left;
+ 	width: 20%;
+  	padding: 10px;
+	background-color: #FFF;	 
+  	font-size: 17px;
+  	border-style: solid;
+  	border-color: lightgray;
+  	color: lightgray;
+  	border-left: none;
+  	cursor: pointer;
+}
+.searchbar button:hover {
+  	background: #66AD57;
+  	color: #FFF;
+}
+.searchbar::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
-#input-container{
-	overflow:hidden;
-	margin:0;
-	padding:0;
-	width: 500px;
-	height:40px;
-}
-#searchbar-container .fas{
-	height: 40px;
-	width: 40px;
-	position: absolute;
-	right: 0px;
-	color: #ADADAD;
-	left: 400px;
-}
-#searchbar-container .fas:hover{
-	border-style: solid;
-	background: #66AD57;
-	color: #FFF;
-}
 #tagline{
 	color: #ADADAD;
 	font-family: helvetica;
@@ -301,4 +320,91 @@ html, body{
 	height: 250px;
 	margin-top: 75px;
 	vertical-align: middle;
+}
+
+@media screen and (max-width: 992px){
+	.hide-mobile{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.hide{
+		display: none;
+	}
+	#ducklogo{
+		width: 100px;
+	}
+	#logo-name{
+		font-size: 30px;
+	}
+	.searchbar input[type=text]{
+		width: 60%;
+		float: none;
+	}
+	.searchbar button{
+		width: 20%;
+		float: none;
+	}
+	#tagline{
+		font-size: 14px;
+	}
+	.content-ads {
+		font-size: 16px;
+	}
+	.content-ads p{
+		font-size: 12px;	
+	}
+	.footer-ad{
+		font-size: 18px;
+	}
+	.footer-ad p{
+		font-size: 14px;
+	}
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+
+  position: absolute;
+  background-color: #FFF;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: #ADADAD;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: flex;
+  text-align: center;
+}
+
+.dropdown-content a:hover {
+  text-decoration: underline;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
